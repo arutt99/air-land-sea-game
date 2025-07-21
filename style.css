@@ -1,0 +1,27 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#theaters-area {
+    display: flex;
+    flex-direction: row;
+}
+
+#air-theater {
+    background-image: url("theater_air.png");
+    height: 200px;
+    width: 300px;
+}
+
+#land-theater {
+    background-image: url("theater_land.png");
+    height: 200px;
+    width: 300px;
+}
+
+#sea-theater {
+    background-image: url("theater_sea.png");
+    height: 200px;
+    width: 300px;
+}
