@@ -1,31 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air, Land, and Sea</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <div id="player2-area">
-            <div id="p2-air-zone"></div>
-            <div id="p2-land-zone"></div>
-            <div id="p2-sea-zone"></div>
-            <div id="player2-hand"></div>
-            <div id="player2-info"></div>
+    <div class="game-container">
+        <div class="scoreboard">
+            <h2>Victory Points</h2>
+            <div class="player-score">
+                <span>Player 1:</span>
+                <span id="player1-vp">0</span>
+            </div>
+            <div class="player-score">
+                <span>Player 2:</span>
+                <span id="player2-vp">0</span>
+            </div>
         </div>
-        <div id="theaters-area">
-            <div id="air-theater"></div>
-            <div id="land-theater"></div>
-            <div id="sea-theater"></div>
+
+        <div class="player-area player-top">
+            <div class="hand-area">
+                <h3>Player 1 Hand</h3>
+                <div class="card-row">
+                    <!-- Example card -->
+                    <div class="card"></div>
+                </div>
+            </div>
+            <div class="supreme-commander">
+                <h3>Supreme Commander</h3>
+                <div class="card-slot"></div>
+            </div>
         </div>
-        <div id="player1-area">
-            <div id="p1-air-zone"></div>
-            <div id="p1-land-zone"></div>
-            <div id="p1-sea-zone"></div>
-            <div id="player1-hand"></div>
-            <div id="player1-info"></div>
+
+        <div class="main-game-area">
+            <div class="theater air">
+                <h2>Air</h2>
+                <div class="player-side player1-side"></div>
+                <div class="player-side player2-side"></div>
+            </div>
+            <div class="theater land">
+                <h2>Land</h2>
+                <div class="player-side player1-side"></div>
+                <div class="player-side player2-side"></div>
+            </div>
+            <div class="theater sea">
+                <h2>Sea</h2>
+                <div class="player-side player1-side"></div>
+                <div class="player-side player2-side"></div>
+            </div>
+        </div>
+
+        <div class="player-area player-bottom">
+             <div class="supreme-commander">
+                <h3>Supreme Commander</h3>
+                <div class="card-slot"></div>
+            </div>
+            <div class="hand-area">
+                <h3>Player 2 Hand</h3>
+                <div class="card-row">
+                    <!-- Example card -->
+                    <div class="card"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
